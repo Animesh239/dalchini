@@ -1,4 +1,4 @@
-export default {
+const fakeData =  {
     authors: [
       {
         id: 123,
@@ -47,3 +47,5 @@ export default {
       }
     ]
   }
+
+  module.exports = fakeData
