@@ -20,33 +20,14 @@ import {
   useNavigate,
 } from 'react-router-dom';
 
-const NoteList = () => {
+const NoteList=()=> {
   const { noteId, folderId } = useParams();
   const [activeNoteId, setActiveNoteId] = useState(noteId);
-//   const { folder } = useLoaderData();
+  const { folder } = useLoaderData();
   const submit = useSubmit();
   const navigate = useNavigate();
 
-  const folder = {
-    notes: [
-        {
-            id: 1,
-            content: 'This is my first note',
-            updatedAt: '2021-10-09T14:10:00.000Z',
-        },
-        {
-            id: 2,
-            content: 'This is my second note',
-            updatedAt: '2021-10-09T14:10:00.000Z',
-        },
-        {
-            id: 3,
-            content: 'This is my third note',
-            updatedAt: '2021-10-09T14:10:00.000Z',
-        },
-    ],
-  }
-//   console.log('[NoteLIST]', { folder });
+  console.log('[NoteLIST]', { folder });
 
   useEffect(() => {
     if (noteId) {
@@ -144,4 +125,4 @@ const NoteList = () => {
   );
 }
 
-export default NoteList;    
+export default NoteList;

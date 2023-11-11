@@ -11,14 +11,7 @@ import { useLoaderData, useSubmit, useLocation } from 'react-router-dom';
 import { debounce } from '@mui/material';
 
 const Note = () => {
-//   const { note } = useLoaderData();
-const note = {
-    id: 1,
-    content: 'This is my first note',
-    updatedAt: '2021-10-09T14:10:00.000Z',
-}
-
-
+  const { note } = useLoaderData();
   const submit = useSubmit();
   const location = useLocation();
   const [editorState, setEditorState] = useState(() => {
