@@ -1,4 +1,5 @@
 const fakeData = require("../fakedata");
+const { GraphQLScalarType } = require("graphql");
 
 const resolver = {
   Date: new GraphQLScalarType({
