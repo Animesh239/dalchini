@@ -8,4 +8,4 @@ const notficationSchema = new mongoose.Schema({
 
 const NotificationModel = mongoose.model('Notification', notficationSchema);
 
-export default NotificationModel;
+module.exports = NotificationModel;

@@ -3,8 +3,9 @@ const FolderModel = require("./FolderModel");
 const NotificationModel = require("./NotificationModel");
 const AuthorModel = require("./AuthorModel");
 
+
 module.exports = {
-  AuthorModel,
+  AuthorModel, 
   FolderModel,
   NoteModel,
   NotificationModel,

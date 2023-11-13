@@ -1,5 +1,7 @@
 const fakeData = require("../fakedata");
 const { GraphQLScalarType } = require("graphql");
+const { FolderModel, NoteModel, AuthorModel, NotificationModel } = require("../models");
+
 
 const resolver = {
   Date: new GraphQLScalarType({
